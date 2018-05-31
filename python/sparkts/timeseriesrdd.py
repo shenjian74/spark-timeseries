@@ -284,7 +284,7 @@ def _read_vec(stream):
     vector_length = read_int(stream)
     vector = np.empty(vector_length)
     # TODO: maybe some optimized way to read this all at once?
-    for i in xrange(vector_length):
+    for i in range(vector_length):
         vector[i] = struct.unpack('!d', stream.read(8))[0]
     
     return vector

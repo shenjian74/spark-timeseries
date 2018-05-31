@@ -1,5 +1,5 @@
 from . import _py2java_int_array, _py2java_double_array, _nparray2breezevector, _nparray2breezematrix, _py2scala_seq
-from _model import PyModel
+from sparkts.models._model import PyModel
 
 from pyspark.mllib.common import _py2java, _java2py
 from pyspark.mllib.linalg import Vectors

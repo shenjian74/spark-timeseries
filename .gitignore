@@ -13,3 +13,5 @@ python/dist/
 python/*.egg-info
 *.log
 *.jar
+.DS_Store
+

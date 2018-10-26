@@ -111,7 +111,7 @@ class TimeSeriesRDDTestCase(PySparkTestCase):
 
         pd_index = dt_index.to_pandas_index()
         self.assertEquals(len(vecs), len(series_arr))
-        for i in xrange(len(vecs)):
+        for i in range(len(vecs)):
             self.assertEquals(series_arr[i][0], labels[i])
             self.assertTrue(pd.Series(vecs[i], pd_index).equals(series_arr[i][1]))
 

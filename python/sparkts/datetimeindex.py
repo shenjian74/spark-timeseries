@@ -164,7 +164,7 @@ def irregular(timestamps, sc):
     """
     dtmodule = sc._jvm.com.cloudera.sparkts.__getattr__('DateTimeIndex$').__getattr__('MODULE$')
     arr = sc._gateway.new_array(sc._jvm.long, len(timestamps))
-    for i in xrange(len(timestamps)):
+    for i in range(len(timestamps)):
         arr[i] = datetime_to_nanos(timestamps[i])
     return DateTimeIndex(dtmodule.irregular(arr))
 
